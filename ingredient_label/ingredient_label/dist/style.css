@@ -1,0 +1,157 @@
+/* PAGE BACKGROUND */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3e6ff;
+  color: #4B0082;
+  padding: 20px;
+}
+
+/* CONTROL PANEL */
+#ingredient-panel {
+  background: #f3e6ff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* FORM INPUTS */
+input, textarea, select {
+  border: 1px solid #4B0082;
+  padding: 5px;
+  margin: 4px 0;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+/* BUTTON STYLE */
+button {
+  background: #800080;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #6a006a;
+}
+
+/* LABEL CONTAINER */
+#label-container {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* LABEL TABLE */
+.label-table {
+  width: 700px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+
+.label-table td,
+.label-table th {
+  border: 1px solid black;
+  padding: 6px;
+  vertical-align: top;
+}
+
+/* ROW HEIGHTS */
+.row-title { height: 45px; }
+.row-ingredients { height: 90px; }
+.row-storage { height: 40px; }
+.row-info { height: 130px; }
+
+/* COLUMN WIDTHS */
+.col-address { width: 33%; }
+.col-contact { width: 33%; text-align: center; }
+.col-weight { width: 33%; text-align: center; }
+
+/* LABEL INPUT STYLE */
+.label-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* PRODUCT NAME */
+.title-input {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* STORAGE BOX */
+.storage-box {
+  text-align: center;
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* ADDRESS BOX */
+.address-box {
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* INGREDIENT TEXT AREA */
+#ingredient-list {
+  line-height: 1.4;
+}
+
+/* INGREDIENT DRAG LIST */
+/* INGREDIENT DRAG LIST WITH BIN BUTTON */
+#ingredient-editor {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#ingredient-editor li {
+  background: #eee;
+  padding: 6px;
+  margin-bottom: 4px;
+  cursor: grab;
+  border-radius: 3px;
+  position: relative; /* for the delete button to align right */
+  padding-right: 25px; /* space for the button */
+}
+
+#ingredient-editor li:active {
+  cursor: grabbing;
+}
+
+#ingredient-editor li button {
+  font-size: 14px;
+  color: #800080; /* matches theme */
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* PRINT STYLE */
+@media print {
+  body { background: white; }
+  #ingredient-panel, button { display: none; }
+  #label-container { margin: 0; }
+}
+
+/* ALLERGEN HIGHLIGHT */
+#ingredient-list strong {
+  color: black;
+  font-weight: bold;
+}

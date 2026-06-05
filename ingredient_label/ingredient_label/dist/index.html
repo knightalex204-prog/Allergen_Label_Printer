@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Ingredient_Label</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Label Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ingredient-panel">
+  <h3>Add Ingredient</h3>
+
+  <!-- 1. Ingredient Name -->
+  <input id="new-ingredient-name" placeholder="Ingredient name">
+
+  <!-- 2. Ingredient is an allergen -->
+  <label>
+    <input type="checkbox" id="ingredient-allergen-checkbox"> Ingredient is an allergen
+  </label>
+
+  <!-- 3. Contains allergen -->
+  <input id="new-ingredient-contains" placeholder="Contains allergen (optional)">
+
+  <!-- 4. Bold tick for Contains -->
+  <label>
+    <input type="checkbox" id="contains-bold-checkbox"> Bold "Contains"
+  </label>
+
+  <!-- 5. Add Ingredient button -->
+  <button id="add-ingredient-btn">Add Ingredient</button>
+
+ <h3>Ingredient Library (Drag to reorder)</h3>
+<ul id="ingredient-editor"></ul>
+
+  <h3>Add Ingredient To Label</h3>
+  <select id="ingredient-dropdown">
+    <option value="">Select ingredient</option>
+  </select>
+  <button id="add-to-label-btn">Add To Label</button>
+
+  <br><br>
+  <button id="clear-last-btn">Clear Last Ingredient</button>
+  <button id="new-label-btn">New Label</button>
+</div>
+
+<hr>
+
+<div id="label-container">
+  <table class="label-table">
+    <tr class="row-title">
+      <th colspan="3">
+        <input class="label-input title-input" placeholder="Product Name">
+      </th>
+    </tr>
+    <tr class="row-ingredients">
+      <td colspan="3">
+        Ingredients: <span id="ingredient-list"></span>
+      </td>
+    </tr>
+    <tr class="row-storage">
+      <td colspan="3">
+        <textarea class="label-input storage-box" placeholder="Storage instructions"></textarea>
+      </td>
+    </tr>
+    <tr class="row-info">
+      <td class="col-address">
+        <textarea class="label-input address-box" placeholder="Address / Producer Information"></textarea>
+      </td>
+      <td class="col-contact">
+        Telephone Number:<br>
+        <input class="label-input contact-box">
+      </td>
+      <td class="col-weight">
+        Net Weight<br>
+        <input class="label-input weight-box">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+<button id="print-label-btn">Print Label</button>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
