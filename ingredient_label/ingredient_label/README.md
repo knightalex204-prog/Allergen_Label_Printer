@@ -1,47 +1,27 @@
-Project Title: Allergen Label Printer
+## Project Title: Allergen Label Printer
 
-
-
-Overview
-
-
+## Overview
 
 A simple web-based tool that formats an allergen-compliant label. Built from a brief provided by a non-technical client, translating their requirement into a clear, functional solution.
 
+## Live Demo
 
+You can view the project on CodePen: https://codepen.io/Alex-Knight-the-scripter/pen/MYjqwLw
 
-Features
-
-
+## Features
 
 * Formats allergen labels based on user input
 * Clean, simple interface
 * instant preview
 * Prints directly from the browser
 
-
-
-Tech Stack
-
-
+## Tech Stack
 
 * HTML
 * CSS
 * JavaScript
 
-
-
-How to run:
-
-
-
-Open index.html in any browser.
-
-
-
-What I learned
-
-
+## What I learnt
 
 * How to translate non-technical requirements into a working product
 * Structuring a small front-end project
